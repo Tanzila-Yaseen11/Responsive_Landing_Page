@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/mainlogo" type="image/x-icon">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li> <a href="#" class="logo"><img src="assets/images/logo.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Products</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#f0f0f0"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h5 data-aos="fade-right" data-aos-duartion="14000">#Coffee for hot days</h5>
+            <h1 data-aos="zoom-in-left" data-aos-duartion="14000" data-aos-delay="200">- Cold Brew</h1>
+            <p data-aos="fade-right" data-aos-duartion="14000" data-aos-delay="300">Boots your productivity and build your mood with a glass of coffee in the morning. Coffee has a stimulating effect.</p>
+            <div class="main-hero" data-aos="flip-down" data-aos-duartion="14000" data-aos-delay="400">
+                <a href="#" class="btn">Order Now</a>
+                <a href="#" class="price">
+                    $16.00 | <span>Regular Price</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-img" data-aos="zoom-in" data-aos-duartion="1400">
+            <img src="assets/images/hero.png" alt="">
+        </div>
+    </section>
+    <div class="icons">
+        <a href="#" data-aos="fade-in" data-aos-duartion="1400" data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duartion="1400" data-aos-delay="700"><i class="ri-youtube-fill"></i></a>
+        <a href="#" data-aos="fade-in" data-aos-duartion="1400" data-aos-delay="800"><i class="ri-twitter-fill"></i></a>
+    </div>
+    <div class="scroll" data-aos="zoom-out-down" data-aos-duartion="1400" data-aos-delay="550">
+        <a href="">
+            <i class="ri-scroll-to-bottom-line"></i>
+            Scroll Down
+        </a>
+    </div>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:1,
+    });
+  </script>
+</body>
+</html>
